@@ -8,7 +8,7 @@ api_v1_router.register('posts', PostViewSet, basename='posts')
 api_v1_router.register('groups', GroupViewSet, basename='groups')
 api_v1_router.register('follow', FollowViewSet, basename='follow')
 api_v1_router.register(
-    'posts/(?P<post_id>\d+)/comments', CommentViewSet, basename='comments'
+    r'posts/(?P<post_id>\d+)/comments', CommentViewSet, basename='comments'
 )
 
 urlpatterns = [
